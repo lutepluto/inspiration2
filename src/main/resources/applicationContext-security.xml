@@ -13,10 +13,9 @@
   <http auto-config="true">
     <intercept-url pattern="/admin.jsp" access="ROLE_ADMIN"/>
     <intercept-url pattern="/**" access="ROLE_USER"/>
-    <form-login login-page="/login.jsp" authentication-failure-url="/" default-target-url="/post-login" />
+    <form-login login-page="/login" authentication-failure-url="/" default-target-url="/post-login" />
     <logout logout-success-url="/post-logout" />
     <http-basic />
-    <access-denied-handler error-page="/403.jsp" />
   </http>
   
   <authentication-manager alias="authenticationManager">
