@@ -76,7 +76,7 @@ public class AuthenticationController {
 	@RequestMapping("/post-login")
 	public String postLogin() {
 		
-		return "redirect: /index";
+		return "redirect:/index";
 	}
 	
 	/**
@@ -85,7 +85,7 @@ public class AuthenticationController {
 	@RequestMapping("/post-logout")
 	public String postLogout() {
 		
-		return "redirect: /login";
+		return "redirect:/login";
 	}
 	
 }

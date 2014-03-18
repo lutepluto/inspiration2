@@ -16,8 +16,8 @@
   <http auto-config="true">
     <intercept-url pattern="/admin" access="ROLE_ADMIN"/>
     <intercept-url pattern="/**" access="ROLE_USER"/>
-    <form-login login-page="/login" authentication-failure-url="/" default-target-url="/post-login" />
-    <logout logout-success-url="/post-logout" />
+    <form-login login-page="/login" authentication-failure-url="/login" default-target-url="/post-login" always-use-default-target="true" />
+    <logout logout-success-url="/post-logout" delete-cookies="JSESSIONID"/>
     <http-basic />
     <session-management invalid-session-url="/timeout" />
   </http>
