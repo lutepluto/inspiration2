@@ -10,7 +10,7 @@
   <body>
     <form action="<c:url value='j_spring_security_check' />" method="POST">
               用户名：<input type="text" name="j_username">
-	  密　码：<input type="text" name="j_password">
+	  密　码：<input type="password" name="j_password">
 	 <input type="submit" name="submit" value="提交">
 	 <input type="reset" value="清空">
 	</form>
